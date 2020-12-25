@@ -2,27 +2,30 @@
 <html>
     <head>
         <link rel="icon" type="image/png" href="images/favicon.png"/>
+        <!-- Yandex.Metrika counter -->
+        <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+ 
+        ym(70800715, "init", {
+         clickmap:true,
+         trackLinks:true,
+         accurateTrackBounce:true,
+         webvisor:true
+        });
+        </script>
+        <noscript><div><img src="https://mc.yandex.ru/watch/70800715" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+        <!-- /Yandex.Metrika counter -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
         <script src="https://kit.fontawesome.com/f27293f353.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="daterangepicker/daterangepicker.css">
-        <link rel="stylesheet" href="daterangepicker/daterangepicker.css">
-        <script src="daterangepicker/moment.js"></script>
-        <script src="daterangepicker/daterangepicker.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
         <link rel="stylesheet" href="AlpenhofStyle.css">
     <style>  
     </style>
-    <script>
-     $(function(){
-        $('#date').daterangepicker({
-            locale: {
-            format: 'DD.MM.YYYY'
-        }
-    });
-});
-    </script>
     </head>
     <body id="bookingRoom">
         <a class="navbar-brand"  href="index.html">A L P E N H O F</a>
@@ -55,13 +58,14 @@
                     </div>
                     <div class="step inactive">
                         <span class="step">
-                            <span class="step-number">2</span>
+                            <span class="step-number">3</span>
                         </span>
                         <span class="step-description">CONFIRM</span>
                     </div>                      
                 </div>
             </div>
         </div>
+        <form name="booking_form" onsubmit="return validate_form ( );">
         <div id="Reservation" class="reservation-container">
             <div class="container">
                 <div class="step1-content">
@@ -77,7 +81,7 @@
                                             <div class="form-group">
                                                 <label for="CheckIn">CHECK IN</label>
                                                 <div class="input-group" id="datetimepicker">
-                                                    <input type="date" class="form-control" id="dateFrom" name="date" placeholder="Choose a reservation date">                                              
+                                                    <input type="date" class="form-control" id="dateFrom" name="dateFrom" placeholder="Choose a reservation date">                                              
                                                 </div>
                                             </div>
                                         </div>
@@ -85,7 +89,7 @@
                                             <div class="form-group">
                                                 <label for="CheckOut">CHECK OUT</label>
                                                 <div class="input-group" id="datetimepicker">
-                                                    <input type="date" class="form-control" id="dateTo" name="date" placeholder="Choose a reservation date"> 
+                                                    <input type="date" class="form-control" id="dateTo" name="dateTo" placeholder="Choose a reservation date"> 
                                                 </div>
                                             </div>                                       
                                         </div>
@@ -101,7 +105,7 @@
                                         <div class="col-md-3">
                                             <div class="form-group">
                                               <label for="">ADULTS</label>
-                                              <select class="form-control" id="AdultsControl">
+                                              <select class="form-control" name="adults" id="AdultsControl">
                                                   <option value="1">1</option>
                                                   <option value="2">2</option>
                                                   <option value="3">3</option>
@@ -114,7 +118,7 @@
                                         <div class="col-md-3">
                                             <div class="form-group">
                                               <label for="">СHILDREN<span>(age 6-13)</span></label>
-                                              <select class="form-control" id="Children1Control">
+                                              <select class="form-control" name="Children1Control" id="Children1Control">
                                                   <option value="0">0</option>
                                                   <option value="1">1</option>
                                                   <option value="2">2</option>
@@ -124,7 +128,7 @@
                                         <div class="col-md-3">
                                             <div class="form-group">
                                               <label for="">СHILDREN<span>(age 3-5)</span></label>
-                                              <select class="form-control" id="Children2Control">
+                                              <select class="form-control" name="Children2Control" id="Children2Control">
                                                   <option value="0">0</option>
                                                   <option value="1">1</option>
                                                   <option value="2">2</option>
@@ -134,7 +138,7 @@
                                         <div class="col-md-3">
                                             <div class="form-group">
                                               <label for="">INFANTS<span>(age 0-2)</span></label>
-                                              <select class="form-control" id="InfantsControl">
+                                              <select class="form-control" name="InfantsControl" id="InfantsControl">
                                                   <option value="0">0</option>
                                                   <option value="1">1</option>
                                                   <option value="2">2</option>
@@ -146,7 +150,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-3 left-col"></div>
-                                <div class="col-md-9 right-col text-center">
+                                <div class="col-md-9 right-col text-center">                        
                                     <button type="submit" class="btn btn-primary">VIEW AVAILABLE ROOMS</button>
                                 </div>
                             </div>
@@ -155,6 +159,7 @@
                 </div>
             </div>
         </div>
+        </form>
         <div class="footer">
             <ul class="list-group list-group-horizontal" style="display: inline-block;">
                 <li class="list-group-item" style="display: inline-block;">
@@ -169,4 +174,5 @@
             </ul>                 
         </div>                     
     </body>
+    <script src="form.js"></script>
 </html>
