@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" type="image/png" href="images/favicon.png"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/f27293f353.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="daterangepicker/daterangepicker.css">
+        <link rel="stylesheet" href="daterangepicker/daterangepicker.css">
+        <script src="daterangepicker/moment.js"></script>
+        <script src="daterangepicker/daterangepicker.js"></script>
+        <link rel="stylesheet" href="AlpenhofStyle.css">
+    <style>  
+    </style>
+    <script>
+     $(function(){
+        $('#date').daterangepicker({
+            locale: {
+            format: 'DD.MM.YYYY'
+        }
+    });
+});
+    </script>
+    </head>
+    <body id="bookingRoom">
+        <a class="navbar-brand"  href="index.html">A L P E N H O F</a>
+        <div class="container" id="step-Info">
+            <div clas="row">
+                <div class="col-md-6 offset-md-3 text-center" style="display: inline-block;">
+                    <div class="step active">
+                        <span class="step">
+                            <span class="step-number">1</span>
+                        </span>
+                        <span class="step-description" style="margin:22px 10px;">Plan your Stay</span>              
+                    </div>
+                    <div class="dots">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <div class="step inactive">
+                        <span class="step">
+                            <span class="step-number">2</span>
+                        </span>
+                        <span class="step-description">CHOOSE<br>ROOMS & RATES</span>
+                    </div>
+                    <div class="dots">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <div class="step inactive">
+                        <span class="step">
+                            <span class="step-number">2</span>
+                        </span>
+                        <span class="step-description">CONFIRM</span>
+                    </div>                      
+                </div>
+            </div>
+        </div>
+        <div id="Reservation" class="reservation-container">
+            <div class="container">
+                <div class="step1-content">
+                    <div class="row">
+                        <div class="col-md-10 offset-md-1">
+                            <div class="row">
+                                <div class="col-md-3 left-col">
+                                    <header>PLAN YOUR STAY</header>
+                                </div>
+                                <div class="col-md-9 right-col">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="CheckIn">CHECK IN</label>
+                                                <div class="input-group" id="datetimepicker">
+                                                    <input type="date" class="form-control" id="dateFrom" name="date" placeholder="Choose a reservation date">                                              
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="CheckOut">CHECK OUT</label>
+                                                <div class="input-group" id="datetimepicker">
+                                                    <input type="date" class="form-control" id="dateTo" name="date" placeholder="Choose a reservation date"> 
+                                                </div>
+                                            </div>                                       
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3 left-col">
+                                    <header>SELECT ROOMS & GUESTS</header>
+                                </div>
+                                <div class="col-md-9 right-col">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                              <label for="">ADULTS</label>
+                                              <select class="form-control" id="AdultsControl">
+                                                  <option value="1">1</option>
+                                                  <option value="2">2</option>
+                                                  <option value="3">3</option>
+                                                  <option value="4">4</option>
+                                                  <option value="5">5</option>
+                                                  <option value="6">6</option>
+                                              </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                              <label for="">СHILDREN<span>(age 6-13)</span></label>
+                                              <select class="form-control" id="Children1Control">
+                                                  <option value="0">0</option>
+                                                  <option value="1">1</option>
+                                                  <option value="2">2</option>
+                                              </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                              <label for="">СHILDREN<span>(age 3-5)</span></label>
+                                              <select class="form-control" id="Children2Control">
+                                                  <option value="0">0</option>
+                                                  <option value="1">1</option>
+                                                  <option value="2">2</option>
+                                              </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                              <label for="">INFANTS<span>(age 0-2)</span></label>
+                                              <select class="form-control" id="InfantsControl">
+                                                  <option value="0">0</option>
+                                                  <option value="1">1</option>
+                                                  <option value="2">2</option>
+                                              </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3 left-col"></div>
+                                <div class="col-md-9 right-col text-center">
+                                    <button type="submit" class="btn btn-primary">VIEW AVAILABLE ROOMS</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <ul class="list-group list-group-horizontal" style="display: inline-block;">
+                <li class="list-group-item" style="display: inline-block;">
+                    <img src="images/TripAdvisor.png">
+                </li>
+                <li class="list-group-item" style="display: inline-block;">
+                    <img src="images/iescape_logo2.png">
+                </li>
+                <li class="list-group-item" style="display: inline-block;">
+                    <img src="images/TUV.png">
+                </li>
+            </ul>                 
+        </div>                     
+    </body>
+</html>

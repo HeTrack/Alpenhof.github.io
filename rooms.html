@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" type="image/png" href="images/favicon.png"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="AlpenhofStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap" rel="stylesheet">
+    <link href="fonts/style.css" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/f27293f353.js" crossorigin="anonymous"></script>
+    <style>
+    </style>
+  </head>
+  <body id="RoomsView"> 
+    <nav class="navbar fixed-top navbar-expand-sm navbar-light">
+      <a class="navbar-brand" href="index.html">A L P E N H O F</a>
+      <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">STANDARD ROOMS <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">SPECIAL ROOMS</a>
+          </li>
+        </ul>
+        <form action="booking.html">
+          <button>BOOK ROOM</button>
+        </form>
+      </div>
+    </nav>
+    <div class="container" id="header">
+      <div class="header">
+        <h1>Our hotel
+          <blockquote>
+            <p>Alpenhof is home to 177 hotel rooms, ranging from cosy hideouts to huge hangouts. 
+               Stay in a bed with a view or in one of our eight special rooms.
+               Alpenhof has a lively night program on weekends. 
+               So be prepared to step in the hustle and bustle.</p>
+          </blockquote>
+        </h1>
+      </div>
+      <div class="features">
+        <h2>All our rooms have access to the following:</h2>
+        <ul class="icons fa-ul">
+          <li>
+            <i class="icon fas fa-wifi"></i><br>
+            <span class="label">Free Wifi</span>
+          </li>
+          <li>
+            <i class="icon fas fa-shower"></i><br>
+            <span class="label">Shower</span>
+          </li>
+          <li>
+            <span class="icon">
+              <svg style="width: 100%; height:100%" xmlns="http://www.w3.org/2000/svg"x="0px" y="0px" viewBox="0 0 36.6 36.6" enable-background="new 0 0 36.6 36.6" xml:space="preserve">
+                <path fill="none" stroke="#010101" stroke-width="2.6109" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                d="M33.5,1.3H3.1c-1,0-1.8,0.8-1.8,1.8v30.4c0,1,0.8,1.8,1.8,1.8h30.4c1,0,1.8-0.8,1.8-1.8V3.1C35.3,2.1,34.5,1.3,33.5,1.3z M21.9,20.8
+                l1.8,5c0.3,0.8-0.3,1.6-1.2,1.6h-8.4c-0.9,0-1.4-0.8-1.2-1.6l1.8-5c0.2-0.5,0.1-1-0.3-1.3c-1.4-1.3-2.3-3.2-1.9-5.3
+                c0.4-2.5,2.5-4.6,5.1-4.9c3.6-0.4,6.6,2.3,6.6,5.8c0,1.8-0.8,3.3-2,4.4C21.8,19.8,21.7,20.3,21.9,20.8z"></path>
+              </svg>
+            </span><br>
+            <span class="label">Safe</span>
+          </li>
+          <li>
+            <span class="icon">
+              <svg style="width: 120%; height:120%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512" height="512" x="0" y="0" viewBox="0 0 511.409 511.409" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                <g transform="matrix(-1,0,2.515500335526186e-32,1,511.4094357490537,-8.526512829121202e-14)">
+                  <g xmlns="http://www.w3.org/2000/svg"><g><g>
+                    <path d="M409.092,119.171c-32.99,0-59.733,26.744-59.733,59.733s26.744,59.733,59.733,59.733s59.733-26.744,59.733-59.733     S442.082,119.171,409.092,119.171z M409.092,221.571c-23.564,0-42.667-19.103-42.667-42.667s19.103-42.667,42.667-42.667     s42.667,19.102,42.667,42.667S432.656,221.571,409.092,221.571z" fill="#000000" data-original="#000000" style="" class=""/>
+                    <path d="M497.909,128.116c-18.211-31.883-52.099-51.576-88.817-51.612c-23.467,1.155-45.822,10.344-63.317,26.027L185.86,127.705     c-4.173,0.676-7.222,4.306-7.168,8.533v85.333c-0.054,4.227,2.995,7.857,7.168,8.533l159.829,25.6     c4.011,3.243,7.936,6.059,11.947,8.533l-4.608,17.067h-29.269c-4.12-0.083-7.71,2.789-8.533,6.827l-8.533,42.667     c-0.944,4.617,2.035,9.125,6.652,10.069c0.619,0.126,1.25,0.184,1.881,0.171h22.187l-16.213,61.781     c-3.582,13.677,4.602,27.669,18.279,31.25c2.084,0.546,4.228,0.826,6.382,0.835h23.296c32.283,0.008,60.158-22.598,66.816-54.187     l23.808-112.896C508.888,239.772,525.959,177.224,497.909,128.116z M221.359,218.329l-25.6-4.011v-70.827l25.6-4.011V218.329z      M325.636,323.971l5.12-25.6h17.835l-6.741,25.6H325.636z M419.503,377.219c-5.02,23.769-26.053,40.738-50.347,40.619H345.86     c-4.71,0.15-8.651-3.546-8.801-8.257c-0.026-0.812,0.064-1.623,0.268-2.41l35.755-134.4c11.225,5.471,23.524,8.385,36.011,8.533     c10.662,0.003,21.259-1.667,31.403-4.949L419.503,377.219z M409.092,264.238c-17.067,0-35.328-7.936-54.272-23.637     c-1.172-0.981-2.587-1.63-4.096-1.877l-112.299-17.749v-84.139l112.299-17.664c1.509-0.247,2.924-0.896,4.096-1.877     c18.944-15.787,37.205-23.723,54.272-23.723c47.128,0,85.333,38.205,85.333,85.333S456.22,264.238,409.092,264.238z" fill="#000000" data-original="#000000" style="" class=""/>
+                    <path d="M132.62,147.331c-3.195-2.736-7.906-2.736-11.101,0c-12.272,13.172-32.898,13.902-46.071,1.631     c-0.563-0.524-1.106-1.068-1.631-1.631c-18.963-19.817-50.401-20.51-70.218-1.547c-0.527,0.504-1.043,1.02-1.547,1.547     c-3.065,3.58-2.649,8.966,0.931,12.032c3.195,2.736,7.906,2.736,11.101,0c12.272-13.172,32.898-13.902,46.071-1.631     c0.563,0.524,1.107,1.068,1.631,1.631c18.963,19.817,50.401,20.51,70.218,1.547c0.527-0.504,1.043-1.02,1.547-1.547     C136.616,155.784,136.199,150.397,132.62,147.331z" fill="#000000" data-original="#000000" style="" class=""/>
+                    <path d="M132.62,198.531c-3.195-2.736-7.906-2.736-11.101,0c-12.272,13.172-32.898,13.902-46.071,1.631     c-0.563-0.524-1.106-1.068-1.631-1.631c-18.963-19.817-50.401-20.51-70.218-1.547c-0.527,0.504-1.043,1.02-1.547,1.547     c-3.065,3.58-2.649,8.967,0.931,12.032c3.195,2.736,7.906,2.736,11.101,0c12.272-13.172,32.898-13.902,46.071-1.631     c0.563,0.524,1.107,1.068,1.631,1.631c18.963,19.817,50.401,20.51,70.218,1.547c0.527-0.504,1.043-1.02,1.547-1.547     C136.616,206.984,136.199,201.597,132.62,198.531z" fill="#000000" data-original="#000000" style="" class=""/>
+                  </g></g></g>
+                </g>
+              </svg>
+            </span><br>
+            <span class="label">Hairdryer</span>
+          </li>
+        </ul>
+      </div>
+      <h3>Select your room type</h3>
+      <div class="button-container">
+        <a class="button standart" href="">STANDARD ROOMS</a>
+        <a class="button special" href="">SPECIAL ROOMS</a>
+      </div>
+    </div>
+    <!--CONTAINER_ROOMS-->
+    <div class="container" id="StandartRooms">
+      <div class="row justify-content-center">
+        <!--COL_1-->
+        <div class="col-auto">
+          <!--SEPARATOR_1-->
+          <div class="image-separator">
+            <img src="images/hotel_divider_1_2.jpg">
+          </div>
+          <!--SECOND-CARD-->
+          <div class="card">
+            <div id="carousel2" class="carousel slide" style="padding: 22px 22px 0;">
+              <ol class="carousel-indicators">
+                <li data-target="#carousel2" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel2" data-slide-to="1"></li>
+                <li data-target="#carousel2" data-slide-to="2"></li>
+                <li data-target="#carousel2" data-slide-to="3"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/Alpenhof_XS_photo1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/Alpenhof_XS_photo2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/Alpenhof_XS_photo3.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/Alpenhof_XS_photo4.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">XS</h4>
+              <a href="booking.html" class="btn btn-primary">BOOK ROOM</a>
+              <p class="card-text">
+              A tiny room, but don’t let its 12m2 size fool you. 
+              It comes with a double bed, shower, toilet, TV, safe and sometimes a useless pillar in the middle of the room. 
+              But we’re sure travellers on tight budgets don’t mind.</p>
+              <ul class="icons fa-ul">
+                <li>
+                  <i class="icon far fa-user"></i><br>
+                  <span class="label">2 persons</span>
+                </li>
+                <li>
+                  <i class="icon fas fa-tv"></i><br>
+                  <span class="label">TV</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--SEPARATOR_1-->
+          <div class="image-separator">
+            <img src="images/hotel_divider_03.jpg">
+          </div>
+          <!--FOURTH-CARD-->
+          <div class="card">
+            <div id="carousel4" class="carousel slide">
+              <ol class="carousel-indicators">
+                <li data-target="#carousel4" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel4" data-slide-to="1"></li>
+                <li data-target="#carousel4" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/Alpenhof_Mtwin_photo1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/Alpenhof_Mtwin_photo2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/Alpenhof_Mtwin_photo3.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">M twin</h4>
+              <a href="booking.html" class="btn btn-primary">BOOK ROOM</a>
+              <p class="card-text">
+              This room has the same features as our Medium room, except this one has two single mattresses. 
+              Because sleeping in one bed can be a bit too cosy when spending the night with your dad, colleague or gardener.</p>
+              <ul class="icons fa-ul">
+                <li>
+                  <i class="icon far fa-user"></i><br>
+                  <span class="label">2 persons</span>
+                </li>
+                <li>
+                  <i class="icon fas fa-tv"></i><br>
+                  <span class="label">TV</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--SIXTH-CARD-->
+          <div class="card">
+            <div id="carousel6" class="carousel slide">
+              <ol class="carousel-indicators">
+                <li data-target="#carousel6" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel6" data-slide-to="1"></li>
+                <li data-target="#carousel6" data-slide-to="2"></li>
+                <li data-target="#carousel6" data-slide-to="3"></li>
+                <li data-target="#carousel6" data-slide-to="4"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/Alpenhof_MIVA_photo1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/Alpenhof_MIVA_photo2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/Alpenhof_MIVA_photo3.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/Alpenhof_MIVA_photo4.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/Alpenhof_MIVA_photo5.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+            </div>
+            <div class="card-body" style="margin-top:10px;">
+              <h4 class="card-title">MIVA</h4>
+              <a href="booking.html" class="btn btn-primary">BOOK ROOM</a>
+              <p class="card-text">
+              Miva is a wheelchair friendly room. It's 35m2 in size and equipped with all the necessary aids. 
+              With one double bed, one single bed and a wheelchair accessible bathroom, Miva is there to help.</p>
+              <ul class="icons fa-ul">
+                <li>
+                  <i class="icon far fa-user"></i><br>
+                  <span class="label">3 persons</span>
+                </li>
+                <li>
+                  <i class="icon fa fa-wheelchair"></i><br>
+                  <span class="label">MIVA</span>
+                </li>
+                <li>
+                  <i class="icon fas fa-tv"></i><br>
+                  <span class="label">TV</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!--COL_2-->
+        <div class="col-auto">
+          <!--FIRST-CARD-->
+          <div class="card">
+            <div id="carousel1" class="carousel slide">
+              <ol class="carousel-indicators">
+                <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel1" data-slide-to="1"></li>
+                <li data-target="#carousel1" data-slide-to="2"></li>
+                <li data-target="#carousel1" data-slide-to="3"></li>
+                <li data-target="#carousel1" data-slide-to="4"></li>
+                <li data-target="#carousel1" data-slide-to="5"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/Alpenhof_Cabins_№1_photo1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/Alpenhof_Cabins_№1_photo2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/Alpenhof_Cabins_№1_photo3.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/Alpenhof_Cabins_№1_photo4.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/Alpenhof_Cabins_№1_photo5.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/Alpenhof_Cabins_№1_photo6.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">Cabin</h4>
+              <a href="booking.html" class="btn btn-primary">BOOK ROOM</a>
+              <p class="card-text">
+              A private cabin (5 m2) with shared bathroom and toilet. 
+              A double bed, a safe and just enough room for your luggage. 
+              Nothing more, nothing less. Ideal for the smallest of budgets. No room for pets.</p>
+              <ul class="icons fa-ul">
+                <li>
+                  <i class="icon far fa-user"></i><br>
+                  <span class="label">2 persons</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--SEPARATOR_2-->
+          <div class="image-separator">
+            <img src="images/hotel_divider_02_2.jpg">
+          </div>
+          <!--THIRTH-CARD-->
+          <div class="card">
+            <div id="carousel3" class="carousel slide">
+              <ol class="carousel-indicators">
+                <li data-target="#carousel3" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel3" data-slide-to="1"></li>
+                <li data-target="#carousel3" data-slide-to="2"></li>
+                <li data-target="#carousel3" data-slide-to="3"></li>
+                <li data-target="#carousel3" data-slide-to="4"></li>
+                <li data-target="#carousel3" data-slide-to="5"></li>
+                <li data-target="#carousel3" data-slide-to="6"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/Alpenhof_M_photo1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/Alpenhof_M_photo2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/Alpenhof_M_photo3.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/Alpenhof_M_photo4.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/Alpenhof_M_photo5.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/Alpenhof_M_photo6.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/Alpenhof_M_photo7.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">M</h4>
+              <a href="booking.html" class="btn btn-primary">BOOK ROOM</a>
+              <p class="card-text">
+              This is the perfect room for travellers who like it in the middle. 
+              Its 18m2 of space is filled with everything you might need for a comfy stay. 
+              A double bed, shower, toilet, TV, a safe and some spare room for free interpretation.</p>
+              <ul class="icons fa-ul">
+                <li>
+                  <i class="icon far fa-user"></i><br>
+                  <span class="label">2 persons</span>
+                </li>
+                <li>
+                  <i class="icon fas fa-tv"></i><br>
+                  <span class="label">TV</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--SEPARATOR_4-->
+          <div class="image-separator">
+            <img src="images/hotel_divider_04_3.jpg">
+          </div>
+          <!--FIFTH-CARD-->
+          <div class="card">
+            <div id="carousel5" class="carousel slide">
+              <ol class="carousel-indicators">
+                <li data-target="#carousel5" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel5" data-slide-to="1"></li>
+                <li data-target="#carousel5" data-slide-to="2"></li>
+                <li data-target="#carousel5" data-slide-to="3"></li>
+                <li data-target="#carousel5" data-slide-to="4"></li>
+                <li data-target="#carousel5" data-slide-to="5"></li>
+                <li data-target="#carousel5" data-slide-to="6"></li>
+                <li data-target="#carousel5" data-slide-to="7"></li>
+                <li data-target="#carousel5" data-slide-to="8"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/Alpenhof_L_photo1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/Alpenhof_L_photo2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/Alpenhof_L_photo3.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/Alpenhof_L_photo4.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/Alpenhof_L_photo5.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/Alpenhof_L_photo6.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/Alpenhof_L_photo7.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/Alpenhof_L_photo8.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/Alpenhof_L_photo9.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">L</h4>
+              <a href="booking.html" class="btn btn-primary">BOOK ROOM</a>
+              <p class="card-text">
+              With 25m2 to 29m2 and four sleeping spots this room offers enough space for a family, a group of friends or a jazz quartet. 
+              There's a bed hanging from the ceiling, for those who like to be on top of things.</p>
+              <ul class="icons fa-ul">
+                <li>
+                  <i class="icon far fa-user"></i><br>
+                  <span class="label">4 persons</span>
+                </li>
+                <li>
+                  <i class="icon fas fa-tv"></i><br>
+                  <span class="label">TV</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--SIXTH-CARD-->
+          <div class="card">
+            <div id="carousel7" class="carousel slide">
+              <ol class="carousel-indicators">
+                <li data-target="#carousel7" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel7" data-slide-to="1"></li>
+                <li data-target="#carousel7" data-slide-to="2"></li>
+                <li data-target="#carousel7" data-slide-to="3"></li>
+                <li data-target="#carousel7" data-slide-to="4"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/Alpenhof_XL_photo1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/Alpenhof_XL_photo2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/Alpenhof_XL_photo3.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/Alpenhof_XL_photo4.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/Alpenhof_XL_photo5.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">XL</h4>
+              <a href="booking.html" class="btn btn-primary">BOOK ROOM</a>
+              <p class="card-text">
+              If you like it big, this room will tickle your fancy for sure. 
+              It's 45m2 in size and has two double beds and two bathrooms: one with a shower and one with a bathtub. 
+              One of the double beds is hidden away in a typical Dutch cupboard with windows, called a 'bedstee'.</p>
+              <ul class="icons fa-ul">
+                <li>
+                  <i class="icon far fa-user"></i><br>
+                  <span class="label">4 persons</span>
+                </li>
+                <li>
+                  <i class="icon fa fa-bath"></i><br>
+                  <span class="label">Bath</span>
+                </li>
+                <li>
+                  <i class="icon fas fa-tv"></i><br>
+                  <span class="label">TV</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="social-bar">
+      <ul class="bar fa-ul">
+        <li>
+          <a href="#" target="_blank">
+            <i class="fa fa-facebook-square" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#" target="_blank">
+            <i class="fab fa-instagram" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#" target="_blank">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="container" id="RoomFooter">
+      <div class="row">
+        <div class="col contact">
+          <h2>Contact</h2>
+          <ul class="fa-ul">
+            <li>
+              <i class="fas fa-map-marker-alt"></i> 
+              <p>
+                <a href="https://www.google.com/maps/place/Hotel+Alpenhof+Davos/@46.7822654,9.812862,17.61z/data=!4m18!1m9!3m8!1s0x4784a3e2c4cde8e9:0x2ee2c3403f995730!2sHotel+Alpenhof+Davos!5m2!4m1!1i2!8m2!3d46.782182!4d9.814037!3m7!1s0x4784a3e2c4cde8e9:0x2ee2c3403f995730!5m2!4m1!1i2!8m2!3d46.782182!4d9.814037" target="_blank"><u>Hofstrasse 22,</u></a>
+                <br>7270 Davos Platz</p>
+            </li>
+            <li>
+              <i class="fas fa-phone"></i>
+              <p>Alpenhof: +31 (0)20 2612 100</p>
+            </li>
+            <li>
+              <i class="far fa-envelope"></i>
+              <p><u>alpenhof@gmail.com</u></p>
+            </li>
+          </ul>
+        </div>
+        <div class="col Jobs">
+          <h2>Relax</h2>
+          <p>Want to relax with us?<br> See our
+            <a href=""><u>relax section.</u></a></p>
+        </div>
+        <div class="col Ivents">
+          <h2>Ivents</h2>
+          <p>Enjoy the new events<br> that await you this year.</p>
+        </div>
+        <div class="col Info">
+          <h2>Info</h2>
+          <p>Looking to park or are just curious to see what breakfast we serve you can find it all in our
+            <a href=""><u>general info.</u></a></p>           
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
