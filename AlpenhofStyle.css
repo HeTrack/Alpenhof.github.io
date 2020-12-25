@@ -1,0 +1,489 @@
+/*Общие стили*/
+.navbar-brand {
+    font-family: 'Abhaya Libre', serif;
+    font-weight: 400;
+    -webkit-text-stroke: 1px black;
+    text-shadow:
+    0 3px 3px rgb(0, 0, 0, 0.4),
+    0 4px 3px rgb(0, 0, 0, 0.4),
+    0 4px 5px rgb(0, 0, 0, 0.4);
+  }
+
+/*Alpenhof главная страница*/
+body#index {
+    background-image: url(images/ALPENHOF.jpg);
+    background-repeat: no-repeat;
+    /* фон будет повторятся по оси-х (горизонтали) */
+    background-size: 100%;
+    min-height: 100%;
+    height: 100%;
+  }
+body#index .navbar.navbar-expang-lg {
+    background-color:rgb(216, 217, 220,0.11);  
+    border: 1px solid rgb(99, 99, 109,0.17);  
+    width: 80%; height: 5vh; 
+    box-sizing: border-box;  
+    margin-top: 15px; 
+    margin-left: 15vh;
+  }
+body#index .navbar-light .navbar-nav .nav-link {
+    font-family: 'Abhaya Libre', serif;
+    font-style: normal;
+    font-size: 15pt;
+    text-shadow:
+      0 3px 3px rgb(0, 0, 0, 0.4),
+      0 4px 3px rgb(0, 0, 0, 0.4);
+  }
+body#index .navbar-light .navbar-brand {
+    margin-left: 5.5%;
+    font-size: 15pt;
+  }
+body#index .collapse {
+    margin-left: 15%;
+  }
+body#index .collapse .nav-item {
+    margin-right: 7.2%
+  }
+  .p-2 {     
+    width: 30vw;
+    margin-top: 11%; 
+    margin-left: 10%;
+  }
+  .rounded-lg {
+    background: rgb(0, 0, 0,0.6); 
+    height: 18.5vw ;
+    font-family: 'Actor',sans-serif
+  }
+  .p-2 h3 {
+    font-size: 3vw;
+  }
+  .p-2 h3 .text-white {
+    font-size: 1.25vw;
+  }
+  .mt-1 .btn-primary {
+    border: #132A3F; 
+    background: rgb(0, 0, 0,0.6);  
+    width: 14vw;
+    font-family: 'Actor',sans-serif;
+    font-size: 1.25vw; 
+    text-align: center;
+  }
+  .mt-1 .btn-primary:hover{
+    background: #000;
+    outline: none;
+  }
+  .big {
+    font-size: 1.75vw;
+  }
+
+/*Бронирование*/
+body#bookingRoom{
+    background: #eeeeee;
+}
+body#bookingRoom .container {
+    padding: 0px 40px 40px;
+}
+.container#step-Info{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.dots,
+.step,
+.dot {
+    display: inline-block;;
+}
+.step.active .step {
+    float: left;
+}
+.step-number {
+    display: table-cell;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+.step.active .step-number {
+    width: 70px;
+    height: 70px;
+    background: #739eba;
+    color: #fff;
+    font-size: 24px;         
+}
+.step-description {
+    color: #739eba;           
+}
+.step.active .step-description {
+    display: inline-block;
+    font-size: 18px;
+}
+.dot {
+    width: 5px;
+    height: 5px;
+    background: #739eba;
+    margin: 0 2px;
+    border-radius: 50%;
+}
+.step.inactive {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+.step.inactive .step-number{
+    top: 2px;
+    color: #739eba;
+    background: #f4f4f4;
+    width: 40px;
+    height: 40px;          
+}
+.step.inactive .step-description {
+    position: absolute;
+    display: block;
+    font-size: 12px;
+    width: 100px;
+    left: -30px;
+}
+.col-md-10 {
+    background: #f7f5f4;
+}
+.row:first-child.right-col,
+.row:first-child.left-col{
+    padding-top:20px;
+}
+header{
+    text-align: right;
+    font-size: 14px;
+    padding-top: 25px;
+    color: #333;
+}
+.right-col{
+    background: #fff;
+    border-left: 0px solid #ccc;
+    padding-top: 10px;
+}
+.form-group label{
+    font-size: 14px;
+    color: #1d1d1b;
+    margin-bottom: 15px;
+
+}
+.form-group{
+    margin-bottom: 15px;
+}
+.col-md-9:last-child.right-col{
+    padding-bottom: 15px;
+}
+.col-md-9 .btn{
+    padding: 15px 30px;
+    margin-bottom: 5px;
+    letter-spacing: .1em;
+    color: #ffffff;
+    background: #739eba;
+    border: 2px solid #739eba;
+    border-radius: 0;
+}
+body#bookingRoom .form-control{
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 1px solid #000;
+    border-top: 0;
+}
+body#bookingRoom .navbar-brand{
+    font-size: 13pt;   
+    margin: 0 22% 0 28%;
+    width: 50%;
+    text-align: center;
+}
+body#bookingRoom .footer {
+    text-align: center;
+}
+.list-group {
+   margin-left: 50%;
+}
+.list-group .list-group-item{
+    display: inline-block;
+    background-color: transparent;
+    border: 0;
+    padding-left: 50px;
+}
+#Reservation {
+    margin-bottom: 30px;
+}
+
+/*Rooms*/
+body#RoomsView {
+    background: #f1f1f1;
+}
+  .navbar.fixed-top {
+    background-color: #fff;
+    border: 3px solid #000;
+    padding: 0;
+    line-height: 1.25;
+}
+body#RoomsView .navbar-brand {
+    margin-left: 2.5%;
+    font-size: 13pt;   
+}
+.collapse#collapsibleNavId .navbar-nav {
+    font-family: 'Apercu-Bold ',Arial,Helvetica,sans-serif;
+    font-size: 18px;
+}
+.collapse#collapsibleNavId .nav-item.active {
+    color: #000;
+    margin-right: 75px;
+}
+.collapse#collapsibleNavId button {
+    background: url(images/watercolorsplats-rapid.gif);
+    padding: 7px;
+}
+  .container#header {
+    margin-top: 50px;
+    text-align: center;
+}
+  .container#header .header {
+    width: 61%;
+    margin: 0 auto;
+    text-align: center;
+}
+  h1 {
+    font-size: 39px;
+    font-family: century-old-style-std, serif;
+}
+  blockquote {
+    text-align: center;
+    text-indent: 24px;
+    font-size: 21px;
+    line-height: 28px;
+    font-family: 'ABeeZee', sans-serif;
+    margin-top: 20px;
+}
+  .features{
+    text-align: center;
+    font-family: 'Apercu ', Arial, Helvetica, sans-serif;
+}
+  .features h2{
+    font-size: 16px;
+}
+  .icons{
+    margin-top: 20px;
+    margin-left: 0;
+}
+  .features .icons li{
+    display: inline-block;
+    width: 10%;
+}
+  i.icon {
+    font-size: 20px;
+}
+  .icon.fas.fa-wifi {
+    transform: rotate(45deg);
+}
+body#RoomsView .label {
+    color: #000;
+    display: inline-block;
+}
+  .features .label {
+    margin-top: 10px;
+}
+  span.icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+  .features h3 {
+    font-size: 21px;
+    font-family: 'Apercu ', Arial, Helvetica, sans-serif;
+}
+  .button-container{
+    margin-top: 20px;
+}
+  .button.standart{
+    margin-right: 30px;
+}
+  .button-container a {
+    text-decoration: none;
+    outline: none;
+    color: white;
+    display: inline-block;
+    position: relative;
+    padding: 15px 30px;
+    border: 1px solid;
+    border-image: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);
+    border-image-slice: 1;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    overflow: hidden;
+    letter-spacing: 2px;
+    transition: .8s cubic-bezier(.165, .84, .44, 1);
+    background-color: black;
+}
+  .button-container a:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 0;
+    width: 100%;
+    z-index: -1;
+    color: #131111;
+    background: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);
+    transition: .8s cubic-bezier(.165, .84, .44, 1);
+}
+  .button-container a:hover {
+    background: rgba(255, 255, 255, 0);
+}  
+  .button-container a:hover:before {
+    bottom: 0%;
+    top: auto;
+    height: 100%;
+}
+  .container#StandartRooms {
+    margin-top: 60px;
+}
+  .image-separator {
+    width: 458px;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 32px;
+}
+  .image-separator img {
+    max-width: 100%;
+}
+  .container#StandartRooms .card {
+    text-align: center;
+    margin-bottom: 32px;
+}
+  .carousel {
+    padding: 22px 22px 0;
+}
+  .carousel-indicators .active {
+    width: 12px;
+    height: 12px;
+    margin: 0;
+    background-color: #fff;
+}
+  .carousel-indicators li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 1px 2px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+  .carousel-inner {
+    width: 412px;
+    height: 270px;
+    overflow: hidden;
+}
+  .container#StandartRooms .card .card-body {
+    margin-top: 10px;
+}
+  .card-body .card-title {
+    font-size: 29px;
+    line-height: 28px;
+    font-family: century-old-style-std, Georgia, serif;
+    font-weight: 550;
+}
+  .card-body .card-text {
+    max-width: 360px;
+    letter-spacing: .5px;
+    margin: 0 auto 32px;
+    line-height: 19px;
+    font-size: 14px;
+    color: #717171;
+    font-family: 'Apercu ',Arial,Helvetica,sans-serif;
+}
+  .card-body .icons {       
+    margin-bottom: 32px;
+    letter-spacing: .5px;
+    font-family: 'Apercu ', Arial, Helvetica, sans-serif;
+}
+  .card-body .icons li {
+      display: inline-block;
+      margin: 0 10px;
+      text-align: center;
+      width: 80px;
+}
+  .card-body .icons .label {
+      font-size: 13px;
+}
+.card-body .btn-primary,
+.card-body .btn-primary:focus {
+    margin-bottom: 24px;
+    padding: 11px 20px;
+    display: inline-block;
+    border: 3px solid #000;
+    font-size: 18px;
+    line-height: 18px;
+    font-family: 'Apercu-Bold ', Arial, Helvetica, sans-serif;
+    background: white;
+    cursor: pointer;
+    color: #000;
+}
+.card-body .btn-primary:hover {
+    color: #fff;
+    background: #000;
+    outline: none;
+    border: 3px solid #000;
+}
+.card-body .btn-primary:focus {
+    outline: none;
+    box-shadow: none;
+}
+body#RoomsView footer {
+    background: #000;
+    padding-top: 50px;
+}
+  .social-bar {
+    text-align: center;
+}
+  .bar {
+    color: #fff;
+}
+  .bar li {
+    display: inline-block;
+    margin: 0 10px;
+    text-align: center;
+    width: 80px;
+    font-size: 30px;
+}
+footer a {
+    color: #fff;
+}
+  .container#RoomFooter {
+    margin-top: 50px;
+}
+  .container#RoomFooter .col {
+    text-align: center;
+    vertical-align: top;
+}
+  .container#RoomFooter h2 {
+    text-align: center;
+    color: #fff;
+    font-family: century-old-style-std, Georgia, serif;
+}
+  .col.contact .fa-ul{
+    margin-left: 0;
+    color: #fff;
+    font-family: 'Apercu ', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+  .col.contact .fa-ul li {
+    display: inline-block;
+    width: 100%;
+  text-align: left;
+}
+  .col.contact .fa-ul i {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+}
+  .container#RoomFooter p {
+    color: #fff;
+}
+  .col.contact .fa-ul p {
+    display: inline-block;
+}
+  .col.contact .fa-ul a {
+    font-family: 'Apercu-Bold ', Arial, Helvetica, sans-serif;
+}
